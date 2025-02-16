@@ -1,116 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
- 
-<head>
-<meta charset="utf-8" />
-<!-- keep the line below for OpenProcessing compatibility -->
-<script src="https://openprocessing.org/openprocessing_sketch.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/addons/p5.sound.min.js"></script>
-<!-- Title shown in web browsers-->
-<title>Add a title here</title>
-<!-- Import fonts from Google -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+AU+SA:wght@100..400&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
-}
-<!-- Include CSS style file -->   
-<link href="style.css" rel="stylesheet" type="text/css" />
-<link href="default.css" rel="stylesheet" type="text/css" />
-<link href="animation.css" rel="stylesheet" type="text/css" />
-</head>
- 
-<body> 
-<!-- The page header code goes here -->
-<header class="border-bottom secondary bounceme">
-<h1>Look at Cats with me</h1>
-</header>
- 
+  <head>
+    <meta charset="utf-8" />
+    <!-- Title shown in web browsers-->
+    <title>Add a title here</title>
+    <!-- Import fonts from Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+AU+SA:wght@100..400&family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Include CSS style file -->
+    <link href="styles/style.css" rel="stylesheet" type="text/css" />
+    <link href="styles/default.css" rel="stylesheet" type="text/css" />
+    <link href="styles/animation.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <!-- The page header code goes here -->
+    <header class="border-bottom secondary bounceme">
+      <h1>Look at Cats with me</h1>
+    </header>
+
     <!-- The main content for the webpage goes between the main tags -->
-<main class="primary">
-<section class="tertiary">
-<h2 class="movemeleft">different Informtaions</h2>
-<p>Options</p>
-<ol>
-<li>Silly white cat</li>
-<li>Extremely silly white cat</li>
-<li>Surprised Cat</li>
-<li>Favourite silly cat</li>
-<li>Shower Cat<li/>
-</ol>
-<p> For more silly cats see the <a href="https://sillycattvseries.fandom.com/wiki/Silly_Cat_Wiki" target="_blank">silly cat wiki</a> </p>
-</section>
-<!-- The first drawing and instructions go here -->     
-<section class="wrap">
-<img class="rounded rollmeleft" src="https://deckard.openprocessing.org/user476329/visual2504808/h65357ab8f54e14da701df47cc487a851/imagessilliy.png" alt="imagessilly.png">
-<p>A <b>silly</b> white cat that is very silly</p>
-</section>
-<!-- The second drawing and instructions go here -->
-<section class="wrap">
-<img class="rounded bounceme" src="cat-cats.png" alt="unsure facial expression">
-<p>An <b>other</b> silly grey cat that is very silly</p>
-</section>
-<!-- The third drawing and instructions go here -->
-<section class="wrap">
-<img class="rounded movemeright" src="https://deckard.openprocessing.org/user476329/visual2504808/h65357ab8f54e14da701df47cc487a851/artworks-zyYqA8D0BdfuyH28-WeeHrw-t500x500.jpg" alt="unsure facial expression">
-<p>Another <b>extremely</b> silly white cat that is very silly</p>
-</section>
- 
-			<section class="wrap">
-<div class="card">
-<div class="card-content">
-<div class="card-face gradient1 rounded">
-<img src="https://deckard.openprocessing.org/user476329/visual2526843/hd0924d927edb3122538a0d3ad45678d9/968168ce8b09e6d5fa55ad4e56ac7d57.png" alt="cat in the shower" width=265 height=390>
-</div>
-<div class="card-face flipme gradient2 rounded ycenter">
-<h2>Surprised car</h2>
-<p>A silly white car that is surprised</p>
-</div>
-</div>
-</div>
-</section>
-<!-- Flip card -->
-<section class="tertiary">
-<h2>Favourite silly cat</h2>
-</section>
-<section class="wrap">
-<div class="card">
-<div class="card-content">
-<div class="card-face">
-<img src="https://deckard.openprocessing.org/user476329/visual2504808/h65357ab8f54e14da701df47cc487a851/shower-cat.png" alt="cat in the shower">
-</div>
-<div class="card-face flipme">
-<h2>Shower cat</h2>
-<p>the silliest of them all, the shower cat</p>
-</div>
-</div>
-</div>
-</section>
-	<section>
-		<h2> Guess the colour</h2>
-	</section>
-	<section>
-		<h2 id="colourValue"></h2>
-		<div>
-			<button class="colourButton"></h2>
-			<button class="colourButton"></h2>
-			<button class="colourButton"></h2>
-			<button class="colourButton"></h2>
-			<button class="colourButton"></h2>
-			<button class="colourButton"></h2>
-		</div>
-		<h2 id="answer"></h2>
-		<div id="reset">
-			<button id="resetButton">Reset game</button>
-		</div>
-		</section>
-</main>
- 
+    <main class="primary">
+      <section class="tertiary">
+        <h2 class="movemeleft">different Informtaions</h2>
+        <p>Options</p>
+        <ol>
+          <li>Silly white cat</li>
+          <li>Extremely silly white cat</li>
+          <li>Surprised Cat</li>
+          <li>Favourite silly cat</li>
+          <li>Shower Cat</li>
+        </ol>
+        <p>
+          For more silly cats see the
+          <a
+            href="https://sillycattvseries.fandom.com/wiki/Silly_Cat_Wiki"
+            target="_blank">silly cat wiki</a>
+        </p>
+      </section>
+      <!-- The first drawing and instructions go here -->
+      <section class="wrap">
+        <img
+          class="rounded rollmeleft"
+          src="images/imagessilliy.png"
+          alt="imagessilly.png"
+        />
+        <p>A <b>silly</b> white cat that is very silly</p>
+      </section>
+      <!-- The second drawing and instructions go here -->
+      <section class="wrap">
+        <img
+          class="rounded bounceme"
+          src="images/cat-cats.jpg"
+          alt="unsure facial expression"
+        />
+        <p>An <b>other</b> silly grey cat that is very silly</p>
+      </section>
+      <!-- The third drawing and instructions go here -->
+      <section class="wrap">
+        <img
+          class="rounded movemeright"
+          src="images/artworks-zyYqA8D0BdfuyH28-WeeHrw-t500x500.jpg"
+          alt="unsure facial expression"
+        />
+        <p>Another <b>extremely</b> silly white cat that is very silly</p>
+      </section>
+
+      <section class="wrap">
+        <div class="card">
+          <div class="card-content">
+            <div class="card-face gradient1 rounded">
+              <img
+                src="images/968168ce8b09e6d5fa55ad4e56ac7d57.png"
+                alt="cat in the shower"
+                width="265"
+                height="390"
+              />
+            </div>
+            <div class="card-face flipme gradient2 rounded ycenter">
+              <h2>Surprised car</h2>
+              <p>A silly white car that is surprised</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Flip card -->
+      <section class="tertiary">
+        <h2>Favourite silly cat</h2>
+      </section>
+      <section class="wrap">
+        <div class="card">
+          <div class="card-content">
+            <div class="card-face">
+              <img
+                src="images/shower-cat.png"
+                alt="cat in the shower"
+              />
+            </div>
+            <div class="card-face flipme">
+              <h2>Shower cat</h2>
+              <p>the silliest of them all, the shower cat</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2>Guess the colour</h2>
+      </section>
+      <section>
+        <h2 id="colourValue"></h2>
+        <div>
+          <button class="colourbutton"></button>
+          <button class="colourbutton"></button>
+          <button class="colourbutton"></button>
+          <button class="colourbutton"></button>
+          <button class="colourbutton"></button>
+          <button class="colourbutton"></button>
+        </div>
+        <h2 id="answer"></h2>
+        <div id="reset">
+          <button id="resetbutton">Reset game</button>
+        </div>
+      </section>
+    </main>
+
     <!-- Footer code go here -->
-<footer class="border-top secondary">
-<p>Made by BN in 2025</p>
-</footer>
-	<script src="script.js"></script>
- 
+    <footer class="border-top secondary">
+      <p>Made by BN in 2025</p>
+    </footer>
+    <script src="scripts/script.js"></script>
   </body>
 </html>

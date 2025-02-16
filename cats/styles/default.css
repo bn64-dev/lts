@@ -1,17 +1,17 @@
 /* Set up colour palette and fonts using variables */
- 
+
 :root {
-  --primary: #00A5CF;
+  --primary: #00a5cf;
   --onprimary: #000000;
   --secondary: #495054;
-  --onsecondary: #00A5CF;
-  --tertiary: #1EFFBC;
+  --onsecondary: #00a5cf;
+  --tertiary: #1effbc;
   --ontertiary: #000000;
-  --page: #00A5CF;
+  --page: #00a5cf;
   --onpage: #000000;
   --detail: #9ba8ae;
   --detail2: #000000;
- 
+
   --body-font: 1rem Verdana, sans-serif;
   --header-font: lighter 3rem "Playwrite AU SA", sans-serif;
   --title-font: lighter 2rem "Playwrite AU SA", sans-serif;

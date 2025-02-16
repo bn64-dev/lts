@@ -2,7 +2,7 @@ spinme {
   animation: rotate-center linear 8s 2; /* runs the 'rotate-centre' animation with linear timing (same pace all the way through) for eight seconds. Runs the animation twice. */
   display: inline-block; /* Important so the animated element is not split to a new line */
 }
- 
+
 @keyframes rotate-center {
   /* The rotate animation code */
   0% {
@@ -13,12 +13,12 @@ spinme {
     transform: rotate(360deg);
   }
 }
- 
+
 .bounceme {
   animation: bounce ease 2s 3; /* runs the 'bounce' animation with ease timing (slow start and end) for two seconds. Runs the animation three times. */
   display: inline-block;
 }
- 
+
 @keyframes bounce {
   /* The bounce animation code */
   0% {
@@ -34,12 +34,12 @@ spinme {
     transform: scale(1, 1) translateY(0); /* Move emoji back to starting position */
   }
 }
- 
+
 .scaleme {
   animation: scale ease 2s infinite; /* runs the 'scale' animation with ease timing (slow start and end) for two seconds. Runs the animation forever. */
   display: inline-block;
 }
- 
+
 @keyframes scale {
   /* The scale animation code */
   0% {
@@ -58,82 +58,82 @@ spinme {
     transform: scale(1, 1);
   }
 }
- 
+
 .rollmeleft {
   animation: rollleft ease 4s 1;
   display: inline-block;
 }
- 
+
 @keyframes rollleft {
   /* The roll animation code */
   from {
     transform: translate(-60vw) rotate(0deg);
   }
- 
+
   to {
     transform: translate(0vw) rotate(360deg);
   }
 }
- 
+
 .rollmeright {
   animation: rollright ease 8s 1;
   display: inline-block;
 }
- 
+
 @keyframes rollright {
   /* The roll animation code */
   from {
     transform: translate(60vw) rotate(360deg);
   }
- 
+
   to {
     transform: translate(0vw) rotate(00deg);
   }
 }
- 
+
 .movemeleft {
   animation: moveleft ease 8s 1;
   display: inline-block;
 }
- 
+
 @keyframes moveleft {
   /* The move animation code */
   from {
     transform: translate(-60vw);
   }
- 
+
   to {
     transform: translate(0vw);
   }
 }
- 
+
 .movemeright {
   animation: moveright ease 8s 1;
   display: inline-block;
 }
- 
+
 @keyframes moveright {
   /* The move animation code */
   from {
     transform: translate(60vw);
   }
- 
+
   to {
     transform: translate(0vw);
   }
 }
- 
+
 .flipme {
   transform: rotateY(180deg);
 }
- 
+
 .bouncerollme {
-	animation: bounceroll ease 4s 1;
+  animation: bounceroll ease 4s 1;
   display: inline-block;
 }
- 
+
 @keyframes bounceroll {
-	0% {
+  0% {
     transform: translate(-60vw) rotate(0deg) scale(1, 1) translateY(0); /* Starting position and actual size */
   }
   10% {
