@@ -2,8 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <!-- Title shown in web browsers-->
-    <title>Add a title here</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A playful webpage about silly cats for entertainment and fun." />
+    <title>Silly Cats</title>
     <!-- Import fonts from Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,14 +21,14 @@
   <body>
     <!-- The page header code goes here -->
     <header class="border-bottom secondary bounceme">
-      <h1>Look at Cats with me</h1>
+      <h1>Look at Cats with Me</h1>
     </header>
 
     <!-- The main content for the webpage goes between the main tags -->
     <main class="primary">
       <section class="tertiary">
-        <h2 class="movemeleft">different Informtaions</h2>
-        <p>Options</p>
+        <h2>Different Information</h2>
+        <p>Options:</p>
         <ol>
           <li>Silly white cat</li>
           <li>Extremely silly white cat</li>
@@ -36,40 +37,32 @@
           <li>Shower Cat</li>
         </ol>
         <p>
-          For more silly cats see the
-          <a
-            href="https://sillycattvseries.fandom.com/wiki/Silly_Cat_Wiki"
-            target="_blank"
-            >silly cat wiki</a
-          >
+          For more silly cats, visit the 
+          <a href="https://sillycattvseries.fandom.com/wiki/Silly_Cat_Wiki" target="_blank" aria-label="Silly Cat Wiki">
+            silly cat wiki
+          </a>.
         </p>
       </section>
       <!-- The first drawing and instructions go here -->
       <section class="wrap">
-        <img
-          class="rounded rollmeleft"
-          src="images/imagessilliy.png"
-          alt="imagessilly.png"
-        />
-        <p>A <b>silly</b> white cat that is very silly</p>
+        <figure>
+          <img class="rounded rollmeleft" src="images/imagessilliy.png" alt="Silly white cat" />
+          <figcaption>A <strong>silly</strong> white cat that is very silly.</figcaption>
+        </figure>
       </section>
       <!-- The second drawing and instructions go here -->
       <section class="wrap">
-        <img
-          class="rounded bounceme"
-          src="images/cat-cats.jpg"
-          alt="unsure facial expression"
-        />
-        <p>An <b>other</b> silly grey cat that is very silly</p>
+        <figure>
+          <img class="rounded bounceme" src="images/cat-cats.jpg" alt="Silly grey cat with an unsure facial expression" />
+          <figcaption>An <strong>other</strong> silly grey cat that is very silly.</figcaption>
+        </figure>
       </section>
       <!-- The third drawing and instructions go here -->
       <section class="wrap">
-        <img
-          class="rounded movemeright"
-          src="images/artworks-zyYqA8D0BdfuyH28-WeeHrw-t500x500.jpg"
-          alt="unsure facial expression"
-        />
-        <p>Another <b>extremely</b> silly white cat that is very silly</p>
+        <figure>
+          <img class="rounded movemeright" src="images/artworks-zyYqA8D0BdfuyH28-WeeHrw-t500x500.jpg" alt="Extremely silly white cat" />
+          <figcaption>Another <strong>extremely</strong> silly white cat that is very silly.</figcaption>
+        </figure>
       </section>
 
       <section class="wrap">
@@ -78,51 +71,51 @@
             <div class="card-face gradient1 rounded">
               <img
                 src="images/968168ce8b09e6d5fa55ad4e56ac7d57.png"
-                alt="cat in the shower"
+                alt="Cat in the shower"
                 width="265"
                 height="390"
               />
             </div>
             <div class="card-face flipme gradient2 rounded ycenter">
-              <h2>Surprised car</h2>
-              <p>A silly white car that is surprised</p>
+              <h2>Surprised Cat</h2>
+              <p>A silly white cat that looks surprised.</p>
             </div>
           </div>
         </div>
       </section>
       <!-- Flip card -->
       <section class="tertiary">
-        <h2>Favourite silly cat</h2>
+        <h2>Favourite Silly Cat</h2>
       </section>
       <section class="wrap">
         <div class="card">
           <div class="card-content">
             <div class="card-face">
-              <img src="images/shower-cat.png" alt="cat in the shower" />
+              <img src="images/shower-cat.png" alt="Cat in the shower" />
             </div>
             <div class="card-face flipme">
-              <h2>Shower cat</h2>
-              <p>the silliest of them all, the shower cat</p>
+              <h2>Shower Cat</h2>
+              <p>The silliest of them all, the shower cat.</p>
             </div>
           </div>
         </div>
       </section>
       <section>
-        <h2>Guess the colour</h2>
+        <h2>Guess the Colour</h2>
       </section>
       <section>
         <h2 id="colourValue"></h2>
         <div>
-          <button class="colourButton"></button>
-          <button class="colourButton"></button>
-          <button class="colourButton"></button>
-          <button class="colourButton"></button>
-          <button class="colourButton"></button>
-          <button class="colourButton"></button>
+          <button class="colourButton" aria-label="Color 1"></button>
+          <button class="colourButton" aria-label="Color 2"></button>
+          <button class="colourButton" aria-label="Color 3"></button>
+          <button class="colourButton" aria-label="Color 4"></button>
+          <button class="colourButton" aria-label="Color 5"></button>
+          <button class="colourButton" aria-label="Color 6"></button>
         </div>
         <h2 id="answer"></h2>
         <div id="reset">
-          <button id="resetButton">Reset game</button>
+          <button id="resetButton">Reset Game</button>
         </div>
       </section>
     </main>
@@ -131,6 +124,6 @@
     <footer class="border-top secondary">
       <p>Made by BN in 2025</p>
     </footer>
-    <script src="scripts/script.js"></script>
+    <script src="scripts/script.js" defer></script>
   </body>
 </html>
